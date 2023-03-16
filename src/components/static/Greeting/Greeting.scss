@@ -1,0 +1,142 @@
+@import '/src/index.scss';
+
+.playcourt {
+	background: #000;
+	p {
+		font-size: 4rem;
+		position: absolute;
+		left: calc(50% - 14.75rem);
+		top: 17rem;
+		color:transparent;
+		background-clip: text;
+		-webkit-background-clip: text;
+		background-image: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+		animation: gradient 1s linear infinite;
+	}
+	img {
+		height: 33.5rem;
+		object-fit: contain;
+	}
+	@keyframes gradient {
+		0% {
+			filter: hue-rotate(0deg);
+		}
+	
+		100% {
+			filter: hue-rotate(-360deg);
+		}
+	}
+}
+.advantages {
+	background: #000;
+	h4 {
+		font-size: 2rem;
+	}
+	p {
+		font-size: 1.2rem;
+	}
+}
+
+.animation-block {
+	min-height: 35rem;
+	background: #000;
+	margin: 0 -0.9375rem;
+	&__run {
+		position: relative;
+		height: 30rem;
+		background: url('../../../../public/images/uniform/uniforms.jpg') left no-repeat;
+		background-size: contain;
+		animation: runplayer 5s ease infinite;
+		@keyframes runplayer {
+			0% {
+				background-position-x: -50rem;
+			}
+		
+			30% {
+				background-position-x: 10rem;
+			}
+		
+			70% {
+				background-position-x: 10rem;
+			}
+		
+			100% {
+				background-position-x: 80rem;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 992px) {
+	.playcourt {
+		p {
+			font-size: 3rem;
+			left: calc(50% - 11rem);
+			top: 12.5rem;
+		}
+		img {
+			height: 25rem;
+		}
+	}
+	
+	.animation-block {
+		min-height: 25rem;
+		&__run {
+			height: 21rem;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.playcourt {
+		p {
+			font-size: 2rem;
+			left: calc(50% - 7.5rem);
+			top: 11rem;
+		}
+		img {
+			height: 19rem;
+		}
+	}
+	.animation-block {
+		min-height: 19rem;
+		&__run {
+			height: 15rem;
+		}
+	}
+}
+@media (max-width: 576px) {
+	.playcourt {
+		p {
+			font-size: 1rem;
+			left: calc(50% - 3.5rem);
+			top: 7.5rem;
+		}
+		img {
+			height: 10rem;
+		}
+	}
+	.animation-block {
+		min-height: 8rem;
+		&__run {
+			height: 6rem;
+			@keyframes runplayer {
+				0% {
+					background-position-x: -35rem;
+				}
+			
+				30% {
+					background-position-x: 5rem;
+				}
+			
+				70% {
+					background-position-x: 5rem;
+				}
+			
+				100% {
+					background-position-x: 35rem;
+				}
+			}
+		}
+	}
+}

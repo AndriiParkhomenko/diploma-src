@@ -1,0 +1,113 @@
+@import '/src/index.scss';
+
+header {
+	background: $orangeColor;
+	position: relative;
+	z-index: 22;
+}
+.header-logo {
+	flex: 0 0 10%;
+	img {
+		max-width: 100%;
+	}
+}
+.header-menu {
+	&__link {
+		color: #000;
+		line-height: 2rem;
+		&::after {
+			content: '';
+			position: absolute;
+			left: 50%;
+			width: 0;
+			height: 1px;
+			bottom: 0;
+			background-color: $pinkColor;
+		}
+		&:hover{
+			color: $pinkColor;
+			&:after {
+				left: 0;
+				animation: lineWidth 0.3s forwards;
+				@keyframes lineWidth {
+					0% {
+						width: 0%;
+					}
+				
+					100% {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+.company {
+	flex:0 0 3.5rem;
+	font-family: "Ubuntu";
+	font-style: italic;
+	a {
+		color: #fff;
+	}
+	:hover {
+		color: $pinkColor;
+	}
+}
+
+.burger{
+	display: none;
+}
+
+@media (max-width: 767px) {
+	.header-logo {
+		flex: 0 0 15%;
+	}
+
+	.header-menu{
+		flex: 0 0 1rem;
+		display: none;
+	}
+
+	.burger{
+		display: block;
+		position: relative;
+		width: 1.875rem;
+		height: 1.125rem;
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: 0.125rem;
+			background-color: #000;
+			transition: all 0.3s ease 0s;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - 1px);
+		}
+	}
+	.burger.active {
+		span {
+			transform: scale(0);
+		}
+		&::before {
+			top: calc(50% - 1px);
+			transform: rotate(-45deg) translate(0, -50%);
+		}
+		&::after {
+			bottom: 50%;
+			transform: rotate(45deg) translate(0, 50%);
+		}
+	}
+}

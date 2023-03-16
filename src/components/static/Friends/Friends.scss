@@ -1,0 +1,649 @@
+@import '/src/index.scss';
+
+.friends {
+	&__text {
+		position: absolute;
+		left: calc(50% - 13.75rem);
+		top: 1rem;
+		font-size: 2.5rem;
+	}
+
+	&__animation {
+		min-height: 30rem;
+		background: #000;
+		margin: 0;
+	}
+
+	&__logo {
+		background: #000;
+		padding: 0 1rem 1rem;
+		margin: 0;
+	}
+}
+.animation {
+
+	&__image-1 {
+		width: 11.25rem;
+		animation: firstplayer 3s steps(1) infinite;
+		@keyframes firstplayer {
+			0% {
+				background: url('../../../../public/images/animation/lebron.jpg') left no-repeat;
+			}
+		
+			16.6% {
+				background: #000;
+			}
+		
+			100% {
+				background: #000;
+			}
+		}
+	}
+
+	&__image-2 {
+		width: 7.5rem;
+		animation: secondplayer 3s steps(1) infinite;
+		@keyframes secondplayer {
+			0% {
+				background: #000;
+			}
+		
+			16.6% {
+				background: url('../../../../public/images/animation/lebron-2.jpg') left no-repeat;
+			}
+		
+			32.2% {
+				background: #000;
+			}
+		
+			100% {
+				background: #000;
+			}
+		}
+	}
+
+	&__image-3 {
+		width: 9rem;
+		animation: thirdplayer 3s steps(1) infinite;
+		@keyframes thirdplayer {
+			0% {
+				background: #000;
+			}
+		
+			32.2% {
+				background: url('../../../../public/images/animation/lebron-3.jpg') left no-repeat;
+			}
+		
+			50% {
+				background: #000;
+			}
+		
+			100% {
+				background: #000;
+			}
+		}
+	}
+
+	&__image-4 {
+		width: 9.375rem;
+		animation: fourthplayer 3s steps(1) infinite;
+		@keyframes fourthplayer {
+			0% {
+				background: #000;
+			}
+		
+			50% {
+				background: url('../../../../public/images/animation/lebron-4.jpg') left no-repeat;
+			}
+		
+			66.6% {
+				background: #000;
+			}
+		
+			100% {
+				background: #000;
+			}
+		}
+	}
+
+	&__image-5 {
+		width: 9.375rem;
+		animation: fifthplayer 3s steps(1) infinite;
+		@keyframes fifthplayer {
+			0% {
+				background: #000;
+			}
+		
+			66.6% {
+				background: url('../../../../public/images/animation/lebron-5.jpg') left no-repeat;
+			}
+		
+			83.4% {
+				background: #000;
+			}
+		
+			100% {
+				background: #000;
+			}
+		}
+	}
+
+	&__image-6 {
+		width: 13.5rem;
+		animation: sixthplayer 3s steps(1) infinite;
+		@keyframes sixthplayer {
+			0% {
+				background: #000;
+			}
+		
+			83.4% {
+				background: url('../../../../public/images/animation/lebron-6.jpg') left no-repeat;
+			}
+		
+			100% {
+				background: #000;
+			}
+		}
+	}
+}
+.logo {
+
+	&__item img {
+		height: 7rem;
+	}
+}
+
+.partner {
+	max-width: 55.1875rem;
+	margin: 0 auto;
+}
+
+.content__container {
+	flex:0 0 50%;
+}
+.content__image {
+	height: 6.25rem;
+	flex:0 0 6.25rem;
+	background: #000;
+	border-radius: .5rem;
+}
+
+.content__title {
+	font-size: 1.5rem;
+	letter-spacing: 2.5px;
+}
+.content__text {
+	font-size: 0.9375rem;
+}
+.partnership {
+	background-color: #000;
+	margin: 0 -.9375rem 5rem;
+	&__left {
+		flex:0 0 50%;
+	}
+	&__text {
+		font-size: 3rem;
+		letter-spacing: .3125rem;
+		p{
+			padding: 0;
+		}
+	}
+	&__right {
+		flex:0 0 50%;
+		img{
+			max-width: 100%;
+		}
+	}
+}
+
+
+@media (max-width: 992px) {
+	.friends {
+		&__text {
+			left: calc(50% - 11rem);
+			top: 1rem;
+			font-size: 2rem;
+		}
+	
+		&__animation {
+			min-height: 26rem;
+		}
+	
+	}
+	.animation {
+
+		&__image-1 {
+			width: 5.8125rem;
+			@keyframes firstplayer {
+				0% {
+					background: url('../../../../public/images/animation/lg-lebron.jpg') left no-repeat;
+				}
+			
+				16.6% {
+					background: #000;
+				}
+			
+				100% {
+					background: #000;
+				}
+			}
+		}
+	
+		&__image-2 {
+			width: 7.25rem;
+			@keyframes secondplayer {
+				0% {
+					background: #000;
+				}
+			
+				16.6% {
+					background: url('../../../../public/images/animation/lg-lebron-2.jpg') left no-repeat;
+				}
+			
+				32.2% {
+					background: #000;
+				}
+			
+				100% {
+					background: #000;
+				}
+			}
+		}
+	
+		&__image-3 {
+			width: 7.1875rem;
+			@keyframes thirdplayer {
+				0% {
+					background: #000;
+				}
+			
+				32.2% {
+					background: url('../../../../public/images/animation/lg-lebron-3.jpg') left no-repeat;
+				}
+			
+				50% {
+					background: #000;
+				}
+			
+				100% {
+					background: #000;
+				}
+			}
+		}
+	
+		&__image-4 {
+			width: 8.125rem;
+			@keyframes fourthplayer {
+				0% {
+					background: #000;
+				}
+			
+				50% {
+					background: url('../../../../public/images/animation/lg-lebron-4.jpg') left no-repeat;
+				}
+			
+				66.6% {
+					background: #000;
+				}
+			
+				100% {
+					background: #000;
+				}
+			}
+		}
+	
+		&__image-5 {
+			width: 6.5625rem;
+			@keyframes fifthplayer {
+				0% {
+					background: #000;
+				}
+			
+				66.6% {
+					background: url('../../../../public/images/animation/lg-lebron-5.jpg') left no-repeat;
+				}
+			
+				83.4% {
+					background: #000;
+				}
+			
+				100% {
+					background: #000;
+				}
+			}
+		}
+	
+		&__image-6 {
+			width: 10rem;
+			@keyframes sixthplayer {
+				0% {
+					background: #000;
+				}
+			
+				83.4% {
+					background: url('../../../../public/images/animation/lg-lebron-6.jpg') left no-repeat;
+				}
+			
+				100% {
+					background: #000;
+				}
+			}
+		}
+	}
+	.logo {
+	
+		&__item img {
+			height: 5rem;
+		}
+	}
+	.content__title {
+		font-size: 1.2rem;
+		letter-spacing: 1.5px;
+	}
+	.content__text {
+		font-size: 0.8rem;
+	}
+	.partnership{
+		&__text {
+			font-size: 2rem;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.friends {
+		&__text {
+			left: calc(50% - 8rem);
+			top: .5rem;
+			font-size: 1.5rem;
+		}
+	
+		&__animation {
+			min-height: 17.5rem;
+		}
+	
+	}
+	.animation {
+
+		&__image-1 {
+			width: 3.875rem;
+			@keyframes firstplayer {
+				0% {
+					background: url('../../../../public/images/animation/md-lebron.jpg') left no-repeat;
+				}
+			
+				16.6% {
+					background: #000;
+				}
+			
+				100% {
+					background: #000;
+				}
+			}
+		}
+	
+		&__image-2 {
+			width: 4.8125rem;
+			@keyframes secondplayer {
+				0% {
+					background: #000;
+				}
+			
+				16.6% {
+					background: url('../../../../public/images/animation/md-lebron-2.jpg') left no-repeat;
+				}
+			
+				32.2% {
+					background: #000;
+				}
+			
+				100% {
+					background: #000;
+				}
+			}
+		}
+	
+		&__image-3 {
+			width: 4.8125rem;
+			@keyframes thirdplayer {
+				0% {
+					background: #000;
+				}
+			
+				32.2% {
+					background: url('../../../../public/images/animation/md-lebron-3.jpg') left no-repeat;
+				}
+			
+				50% {
+					background: #000;
+				}
+			
+				100% {
+					background: #000;
+				}
+			}
+		}
+	
+		&__image-4 {
+			width: 5.4375rem;
+			@keyframes fourthplayer {
+				0% {
+					background: #000;
+				}
+			
+				50% {
+					background: url('../../../../public/images/animation/md-lebron-4.jpg') left no-repeat;
+				}
+			
+				66.6% {
+					background: #000;
+				}
+			
+				100% {
+					background: #000;
+				}
+			}
+		}
+	
+		&__image-5 {
+			width: 4.375rem;
+			@keyframes fifthplayer {
+				0% {
+					background: #000;
+				}
+			
+				66.6% {
+					background: url('../../../../public/images/animation/md-lebron-5.jpg') left no-repeat;
+				}
+			
+				83.4% {
+					background: #000;
+				}
+			
+				100% {
+					background: #000;
+				}
+			}
+		}
+	
+		&__image-6 {
+			width: 6.6875rem;
+			@keyframes sixthplayer {
+				0% {
+					background: #000;
+				}
+			
+				83.4% {
+					background: url('../../../../public/images/animation/md-lebron-6.jpg') left no-repeat;
+				}
+			
+				100% {
+					background: #000;
+				}
+			}
+		}
+	}
+	.logo {
+	
+		&__item img {
+			height: 3.5rem;
+		}
+
+	}
+	.content__container {
+		flex:0 0 100%;
+	}
+	.partnership{
+		&__text {
+			font-size: 1.5rem;
+		}
+	}
+}
+@media (max-width: 576px) {
+	.friends {
+		&__text {
+			left: calc(50% - 4.8rem);
+			top: .5rem;
+			font-size: .8rem;
+		}
+	
+		&__animation {
+			min-height: 8.5rem;
+		}
+	
+	}
+	.animation {
+		&__image-1 {
+			width: 1.9375rem;
+			@keyframes firstplayer {
+				0% {
+					background: url('../../../../public/images/animation/sm-lebron.jpg') left no-repeat;
+				}
+			
+				16.6% {
+					background: #000;
+				}
+			
+				100% {
+					background: #000;
+				}
+			}
+		}
+	
+		&__image-2 {
+			width: 2.375rem;
+			@keyframes secondplayer {
+				0% {
+					background: #000;
+				}
+			
+				16.6% {
+					background: url('../../../../public/images/animation/sm-lebron-2.jpg') left no-repeat;
+				}
+			
+				32.2% {
+					background: #000;
+				}
+			
+				100% {
+					background: #000;
+				}
+			}
+		}
+	
+		&__image-3 {
+			width: 2.375rem;
+			@keyframes thirdplayer {
+				0% {
+					background: #000;
+				}
+			
+				32.2% {
+					background: url('../../../../public/images/animation/sm-lebron-3.jpg') left no-repeat;
+				}
+			
+				50% {
+					background: #000;
+				}
+			
+				100% {
+					background: #000;
+				}
+			}
+		}
+	
+		&__image-4 {
+			width: 2.6875rem;
+			@keyframes fourthplayer {
+				0% {
+					background: #000;
+				}
+			
+				50% {
+					background: url('../../../../public/images/animation/sm-lebron-4.jpg') left no-repeat;
+				}
+			
+				66.6% {
+					background: #000;
+				}
+			
+				100% {
+					background: #000;
+				}
+			}
+		}
+	
+		&__image-5 {
+			width: 2.1875rem;
+			@keyframes fifthplayer {
+				0% {
+					background: #000;
+				}
+			
+				66.6% {
+					background: url('../../../../public/images/animation/sm-lebron-5.jpg') left no-repeat;
+				}
+			
+				83.4% {
+					background: #000;
+				}
+			
+				100% {
+					background: #000;
+				}
+			}
+		}
+	
+		&__image-6 {
+			width: 3.3125rem;
+			@keyframes sixthplayer {
+				0% {
+					background: #000;
+				}
+			
+				83.4% {
+					background: url('../../../../public/images/animation/sm-lebron-6.jpg') left no-repeat;
+				}
+			
+				100% {
+					background: #000;
+				}
+			}
+		}
+	}
+	.logo {
+	
+		&__item img {
+			height: 2rem;
+		}
+	}
+	.content__title {
+		font-size: 1.1rem;
+	}
+	.partnership{
+		margin: 0 -.9375rem 3rem;
+		&__text {
+			font-size: 1.1rem;
+			letter-spacing: .2125rem;
+		}
+	}
+}

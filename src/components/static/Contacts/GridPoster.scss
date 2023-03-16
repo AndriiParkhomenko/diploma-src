@@ -1,0 +1,154 @@
+@import '/src/index.scss';
+
+.poster-grid {
+	display: grid;
+	grid-template: repeat(4, 10rem) / repeat(6, 10rem);
+	padding: 4.5rem 5.6rem;
+	margin: 0 -15px;
+	background: #000;
+	&__dank {
+		grid-row: 1 / 3;
+		grid-column: 1;
+	}
+
+	&__chill {
+		grid-row: 1 / 3;
+		grid-column: 2;
+	}
+
+	&__woman {
+		grid-row: 1;
+		grid-column: 4;
+	}
+
+	&__team {
+		grid-row: 1;
+		grid-column: 3;
+	}
+
+	&__sunset {
+		grid-row: 1 / 3;
+		grid-column: 5 / 7;
+	}
+
+	&__vintage {
+		grid-row: 3 / 4;
+		grid-column: 1 / 3;
+	}
+
+	&__game {
+		position: relative;
+		grid-row: 2 / 4;
+		grid-column: 3 / 5;
+		p{
+			position: absolute;
+			top: calc(50% - 1.5rem);	
+			left: 0;
+			right: 0;
+			z-index: 10;
+			text-transform: uppercase;
+			color: #fff;
+			text-shadow: 2px 2px 2px #000;
+			font-size: 1.7rem;
+		}
+	}
+
+	&__chain {
+		grid-row: 4;
+		grid-column: 3;
+	}
+
+	&__girl {
+		grid-row: 4;
+		grid-column: 4;
+	}
+
+	&__block {
+		grid-row: 3 / 4;
+		grid-column: 5 / 6;
+	}
+
+	&__player {
+		grid-row: 3 / 4;
+		grid-column: 6 / 7;
+	}
+}
+
+@media (max-width: 1200px) {
+	.poster-grid {
+		padding: 1rem 0rem;
+	}
+}
+
+@media (max-width: 992px) {
+	.poster-grid {
+		grid-template: repeat(12, 10rem) / repeat(2, 10rem);
+		padding: 4.5rem 12.5rem;
+		&__dank {
+			grid-row: 1 / 3;
+			grid-column: 1;
+		}
+	
+		&__chill {
+			grid-row: 1 / 3;
+			grid-column: 2;
+		}
+	
+		&__woman {
+			grid-row: 5;
+			grid-column: 2;
+		}
+	
+		&__team {
+			grid-row: 5;
+			grid-column: 1;
+		}
+	
+		&__sunset {
+			grid-row: 9 / 11;
+			grid-column: 1 / 3;
+		}
+	
+		&__vintage {
+			grid-row: 3 / 4;
+			grid-column: 1 / 3;
+		}
+	
+		&__game {
+			grid-row: 6 / 8;
+			grid-column: 1 / 3;
+		}
+	
+		&__chain {
+			grid-row: 8;
+			grid-column: 1;
+		}
+	
+		&__girl {
+			grid-row: 8;
+			grid-column: 2;
+		}
+	
+		&__block {
+			grid-row: 11 / 13;
+			grid-column: 1;
+		}
+	
+		&__player {
+			grid-row: 11 / 13;
+			grid-column: 2;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.poster-grid {
+		padding: 4.5rem 6.875rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.poster-grid {
+		padding: 1rem 0;
+	}
+}

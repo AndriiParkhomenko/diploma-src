@@ -1,0 +1,44 @@
+@font-face {
+	font-family: "Roboto";
+	src: url("../public/fonts/Roboto-Regular.ttf");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Ubuntu";
+	src: url("../public/fonts/Ubuntu-Regular.ttf");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+/* ===================================== */
+$orangeColor:#f88e4e;
+$yellowColor: #f6c636;
+$blueColor:#0146ad;
+$pinkColor: #662293;
+/* ===================================== */
+body {
+	margin: 0;
+	background: #FF512F;
+	background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+	background: linear-gradient(to right, #F09819, #FF512F);
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	  sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 100%;
+ }
+ a, a:hover, a:active a:visited{text-decoration: none; color:#000}
+ ul,li{list-style: none; padding: 0; margin: 0; border: 0;}
+ img{vertical-align: top;}
+ a:focus,a:active{outline: none;}
+/* ===================================== */
+.wrapper {
+	background: url("../public/images/middleimage-1.jpg") center no-repeat;
+	background-attachment: fixed;
+}
+.container {
+	font-family: "Roboto";
+}

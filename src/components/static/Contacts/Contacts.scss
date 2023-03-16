@@ -1,0 +1,30 @@
+@import '/src/index.scss';
+
+.hello {
+	background: #000;
+	&__map {
+		iframe {
+			max-width: 100%;
+		}
+	}
+
+	&__message {
+		background: #000;
+	}
+}
+.message {
+	&__button .btn-light {
+		border-radius: .25rem;
+		&::after {
+		content: "";
+		padding-right: 1.7rem;
+		background: url("../../../../public/images/icons/arrow.svg") right no-repeat;
+		}
+	}
+}
+.bigborder {
+border: 2px solid #959595;
+background-color: #252525;
+color: #959595;
+}
+

@@ -1,0 +1,33 @@
+.good {
+	font-family: "Ubuntu";
+	border: 1px solid #c6c6c6;
+	border-radius: .4rem;
+
+		&__image-wrapper {
+			img {
+				max-width: 80%;
+				max-height: 5rem;
+			}
+		}
+
+		&__title {
+			width: 9rem;
+			font-weight: 500;
+		}
+}
+
+@media (max-width: 576px) {
+	.good {
+		&__image-wrapper  img {
+			max-width: 80%;
+			max-height: 3rem;
+		}
+	
+		&__title {
+			width: 5.5rem;
+			font-weight: 500;
+			overflow: hidden;
+			height: 4.75rem;
+		}
+	}
+}

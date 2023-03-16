@@ -1,0 +1,38 @@
+@import '/src/index.scss';
+
+.product {
+	width: 100%;
+	font-family: "Ubuntu";
+	border: 1px solid #c6c6c6;
+	border-radius: .4rem;
+	transition: transform .3s, box-shadow .3s ease-in-out;
+		&:hover {
+		transform: translateY(-.5rem);
+		box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.06);
+		z-index: 1;
+	}
+		&__image-wrapper {
+			img {
+				max-width: 80%;
+				max-height: 10rem;
+			}
+		}
+
+		&__heart {
+			width: 1rem;
+			height: 1rem;
+			position: absolute;
+			top: 1rem;
+			right: 1rem;
+			z-index: 3;
+			cursor: pointer;
+		}
+
+		&__title {
+			font-size: 1.3rem;
+			font-weight: 500;
+			overflow: hidden;
+			height: 5.85rem;
+		}
+}
+

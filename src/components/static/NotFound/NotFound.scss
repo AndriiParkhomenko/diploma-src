@@ -1,0 +1,35 @@
+@import '/src/index.scss';
+.error-paige {
+	background: #000;
+	h6 {
+		font-size: 2rem;
+		font-family: "Ubuntu";
+	}
+}
+
+.error-info {
+	background: $orangeColor;
+	border: $yellowColor 1rem solid;
+}
+
+@media (max-width: 767px) {
+	.error-paige {
+		img {
+			height: 15rem;
+		}
+		h6 {
+			font-size: 1.5rem;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.error-paige {
+		img {
+			height: 10rem;
+		}
+		h6 {
+			font-size: 1.3rem;
+		}
+	}
+}

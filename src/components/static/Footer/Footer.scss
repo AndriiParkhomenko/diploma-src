@@ -1,0 +1,84 @@
+@import '/src/index.scss';
+
+.footer {
+	background: $orangeColor;
+	color: #000000;
+	&__contact {
+		a {
+			width: 2.5rem;
+			height: 2.5rem;
+			background-image: url('../../../../public/images/icons/social-media-icons-css-sprite.webp');
+			background-position-y: -.6875rem;
+			&:hover{
+				background-position-y: -4.25rem;
+			}
+		}
+	}
+
+	&__logo {
+		flex: 0 0 6rem;
+		img {
+			height: 4rem;
+		}
+	}
+
+	&__go-to-up {
+		position: fixed;
+		top: 82%;
+		right: 1%;
+		z-index:16
+	}
+}
+.contact {
+	&__address::before {
+		content: "";
+		background: url('../../../../public/images/icons/geo.svg') center no-repeat;
+		padding: 1rem;
+	}
+
+	&__email::before {
+		content: "";
+		background: url('../../../../public/images/icons/email.svg') center no-repeat;
+		padding: 1rem;
+	}
+
+	&__phone::before {
+		content: "";
+		background: url('../../../../public/images/icons/telephone.svg') center no-repeat;
+		padding: 1rem;
+	}
+
+	&__twitter {
+		background-position-x: -46.5rem;
+	}
+
+	&__facebook {
+		background-position-x: -4.125rem;
+	}
+
+	&__insta {
+		background-position-x: -53.572rem;
+	}
+}
+@media (max-width: 992px) {
+	.footer {
+		&__logo {
+			flex: 0 0 4rem;
+			img {
+				height: 4rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.footer {
+		&__logo {
+			flex: 0 0 2.3rem;
+			align-self: end;
+			img {
+				height: 2.3rem;
+			}
+		}
+}
+}
